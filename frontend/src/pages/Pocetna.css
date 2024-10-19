@@ -1,0 +1,15 @@
+.Pocetna {
+    text-align: left;
+    width: 100%;
+  }
+  
+.Pocetna-header {
+    background-color: #FEFEFE;
+    /*min-height: 100vh;*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    font-size: calc(10px + 2vmin);
+  }
