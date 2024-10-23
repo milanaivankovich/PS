@@ -1,6 +1,6 @@
 import "./Pocetna.css";
 import React from "react";
-import MenuBar from "../components/MenuBar-registrovan";
+import MenuBar from "../components/MenuBar.js";
 import Pozadina from "../images/tennis-court-seen-from-air.jpg";
 
 function Pocetna() {

@@ -1,5 +1,5 @@
 import React from "react";
-import "./MenuBar-registrovan.css";
+import "./MenuBar.css";
 import logo from "../images/logo.png";
 import profileImage from "../images/user.svg";
 import SearchComponent from "./Search.js";
