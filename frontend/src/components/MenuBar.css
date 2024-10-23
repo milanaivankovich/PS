@@ -46,3 +46,20 @@
   .menu-item a:hover {
     color: #000000;
   }
+
+  .login-button {
+    margin-left: 800px; /* Ovdje definiraš udaljenost dugmeta od desne ivice */
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for login button */
+  .login-button:hover {
+    background-color: #e64a19; /* Tamnija nijansa kada je dugme hoverovano */
+  }

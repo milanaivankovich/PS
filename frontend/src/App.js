@@ -1,29 +1,27 @@
 import "./App.css";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Pocetna from "./pages/Pocetna";
+import LogIn from "./pages/LogIn"; // Import LogIn page
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("pocetna");
+
+  // Set the page based on the URL path
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (path === "/login") {
+      setCurrentPage("login");
+    } else {
+      setCurrentPage("pocetna");
+    }
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
-        {/*
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        */}
-        {/*
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> 
-        */}
         <div className="Header">
-          <Pocetna /> {/* Add the MenuBar component here */}
+          {currentPage === "pocetna" && <Pocetna />} {/* Show Pocetna page */}
+          {currentPage === "login" && <LogIn />} {/* Show LogIn page */}
           <div className="content">
             <h1></h1>
             <p></p>
