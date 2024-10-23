@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+  }
+  
+  .login-left {
+    width: 50%;
+    max-width: 400px;
+    color: black;
+  }
+    
+  label {
+    
+    margin-bottom: 5px; 
+    display: block;
+  }
+
+  .login-welcome {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .login-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .login-btn.google {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  
+  .login-btn.facebook {
+    background-color: #3b5998;
+  }
+  
+  .login-right {
+    width: 50%;
+    /*slika sportiste */
+  }
+  
+  .login-right img {
+    width: 100%;
+    height: auto;
+  }
+
+  .login-logo {
+    width: 100%;
+    max-width: 400px; 
+
+  }
+    
+
+  .login-welcome, p {
+    display: block; /* osiguraj da su elementi blok elementi */
+  }
+  
