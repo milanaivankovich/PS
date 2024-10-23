@@ -2,3 +2,4 @@
 *.json
 frontend/src/App.test.js
 frontend/eslint.config.mjs
+frontend/src/index.js

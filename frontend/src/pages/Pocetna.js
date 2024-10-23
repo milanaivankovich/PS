@@ -8,7 +8,7 @@ function Pocetna() {
     <div className="pocetna">
       <header className="pocetna-header">
         <div className="header">
-          <MenuBar />
+          <MenuBar variant={["unregistered"]} search={false} />
         </div>
       </header>
       <img src={Pozadina} className="velika-pozadina" />
