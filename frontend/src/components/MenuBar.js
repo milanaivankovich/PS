@@ -12,7 +12,7 @@ const MenuBar = ({ variant, search }) => {
         <img src={logo} className="logo" />
         <ul className="menu">
           <li className="menu-item">
-            <a href="#pocetna">Početna</a>
+            <a href="pocetna">Početna</a>
           </li>
           <li className="menu-item">
             <a href="tereni">Tereni</a>

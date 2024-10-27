@@ -22,10 +22,6 @@ function App() {
         <div className="Header">
           {currentPage === "pocetna" && <Pocetna />} {/* Show Pocetna page */}
           {currentPage === "login" && <LogIn />} {/* Show LogIn page */}
-          <div className="content">
-            <h1></h1>
-            <p></p>
-          </div>
         </div>
       </header>
     </div>

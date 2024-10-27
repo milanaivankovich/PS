@@ -1,17 +1,23 @@
 import "./Pocetna.css";
 import React from "react";
 import MenuBar from "../components/MenuBar.js";
-import Pozadina from "../images/tennis-court-seen-from-air.jpg";
+import Search from "../components/Search.js";
+import Footer from "../components/Footer.js";
 
 function Pocetna() {
   return (
     <div className="pocetna">
       <header className="pocetna-header">
-        <div className="header">
-          <MenuBar variant={["unregistered"]} search={false} />
-        </div>
+        <MenuBar variant={["unregistered"]} search={false} />
       </header>
-      <img src={Pozadina} className="velika-pozadina" />
+      <div className="pocetna-body">
+        <div className="search">
+          <Search />
+        </div>
+        <div className="footer">
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }

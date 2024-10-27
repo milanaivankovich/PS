@@ -1,22 +1,41 @@
+
 .pocetna {
-    text-align: left;
-    width: 100%;
-    height: 100%;
-  }
-  
-.pocetna-header {
-    background-color: #FEFEFE;
-    /*min-height: 100vh;*/
-    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+.pocetna-body {
+    height: 97vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    font-size: calc(10px + 2vmin);
+    justify-content: center; /* Center elements horizontally */
+    align-content: center;
+    
   }
+  .pocetna-header {
+    min-width: 100vw;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+  }
+.search  {
+  height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/tennis-court-seen-from-air.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-.velika-pozadina {
-  /* tennis-court-seen-from-air 1 */
-  width: 100%;
 
+.footer {
+  max-height: 58px;
+  min-width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
