@@ -95,6 +95,6 @@
     flex-grow: 0;
 }
 
-button:hover{
+.EventCard-button:hover{
     color: #e64a19;
 }

@@ -12,8 +12,7 @@ function App() {
     const path = window.location.pathname;
     if (path === "/login") {
       setCurrentPage("login");
-    }
-    if (path === "/dogadjaji") {
+    } else if (path === "/dogadjaji") {
       setCurrentPage("dogadjaji");
     } else {
       setCurrentPage("pocetna");
