@@ -2,6 +2,8 @@ import React from "react";
 import "./Dogadjaji.css";
 import MenuBar from "../components/MenuBar.js";
 import EventCard from "../components/EventCard.js";
+import SponsoredEventCard from "../components/SponsoredEventCard.js";
+import Footer from "../components/Footer.js";
 
 const Dogadjaji = () => {
   return (
@@ -28,14 +30,15 @@ const Dogadjaji = () => {
           <div className="Event-bar-subtitle">Sponzorisani događaji</div>
           <div className="Scroll-bar">
             <div className="Event-cards">
-              <EventCard />
-              <EventCard />
-              <EventCard />
-              <EventCard />
+              <SponsoredEventCard />
+              <SponsoredEventCard />
+              <SponsoredEventCard />
+              <SponsoredEventCard />
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </body>
   );
 };
