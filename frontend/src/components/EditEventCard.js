@@ -25,6 +25,7 @@ const EditEventCard = ({ user, pk, event, closeFunction }) => {
     "field": -1,
     "sport": -1
   });
+
   //update
 
   useEffect(() => {
@@ -144,6 +145,25 @@ const EditEventCard = ({ user, pk, event, closeFunction }) => {
     }),
   };
 
+  //provjera zauzetosti terena todo
+  const [allAdvertisements, setAllAdvertisements] = useState([]);
+  useEffect(() => {
+    const fetchAdvertisements = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/api/activities/");
+        if (!response.ok) {
+          throw new Error("Failed to fetch advertisements");
+        }
+        const data = await response.json();
+        setAllAdvertisements(data);
+      } catch (error) {
+        console.error("Error fetching advertisements:", error);
+      }
+    };
+
+    fetchAdvertisements();
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -151,6 +171,35 @@ const EditEventCard = ({ user, pk, event, closeFunction }) => {
     if (eventData.field !== -1 && eventData.sport !== -1 && eventData.NumberOfParticipants !== -1
       && eventData.NumberOfParticipants !== -1
     ) {
+      //provjera zauzetosti terena todo
+      const isDuplicate = allAdvertisements.some((ad) => {
+        const adStartTime = new Date(ad.date);
+        adStartTime.setHours(adStartTime.getHours() - 1);
+        const adEndTime = new Date(ad.date);
+        adEndTime.setHours(adEndTime.getHours() - 1);
+        adEndTime.setHours(adEndTime.getHours() + ad.duration_hours);
+
+        const eventStartTime = new Date(eventData.date);
+        const eventEndTime = new Date(eventData.date);
+        eventEndTime.setHours(eventEndTime.getHours() + parseInt(eventData.duration_hours || 0, 10));
+
+        // Provjera preklapanja vremena
+        return (
+          ad.field === selectedLocation?.value && ad.id !== advertisementId &&
+          (
+            (eventStartTime >= adStartTime && eventStartTime < adEndTime) ||
+            (eventEndTime > adStartTime && eventEndTime <= adEndTime) ||
+            (eventStartTime <= adStartTime && eventEndTime >= adEndTime)
+          )
+        );
+      });
+
+      if (isDuplicate) {
+        alert(
+          "Postoji već događaj za odabrani teren i datum. Molimo odaberite drugi datum, vrijeme ili teren."
+        );
+        return;
+      }
       if (eventData.id !== -1) {
         updateEventData();
       }
