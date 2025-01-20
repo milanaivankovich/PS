@@ -12,14 +12,15 @@
 
     z-index: 1000;
     position: relative;
-    overflow-y: auto;
     max-height: 90vh;
+    max-width: 90vw;
 
 }
 
 .comments-section-dimmer .comments-section-body {
     padding: 0px 10px;
     overflow-y: scroll;
+    max-height: 83vh;
 }
 
 .comments-section-dimmer {
@@ -40,7 +41,7 @@
 }
 
 
-.comments-section-dimmer .close-icon {
+.comments-section-dimmer .comments-section-close-icon {
     color: #F15A24;
     align-self: flex-end;
     height: 25px;

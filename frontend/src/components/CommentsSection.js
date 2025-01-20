@@ -8,7 +8,7 @@ const CommentsSection = ({ id, closeFunction }) => {
     return (
         <div className='comments-section-dimmer'>
             <div className="comments-section-card">
-                <IoIosCloseCircle className="close-icon" onClick={closeFunction} />
+                <IoIosCloseCircle className="comments-section-close-icon" onClick={closeFunction} />
                 <div className="comments-section-body">
                     <Comments activityId={id} />
                 </div>

@@ -44,13 +44,18 @@
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  outline: none;
   resize: none;
+}
+
+.add-comment textarea:focus {
+  border: 1px solid #F15A24;
 }
 
 .add-comment button {
   align-self: flex-end;
   padding: 8px 12px;
-  background-color: #007bff;
+  background-color: #F15A24;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -59,10 +64,17 @@
 }
 
 .add-comment button:hover {
-  background-color: #0056b3;
+  background-color: #ff4400;
 }
 
 .add-comment button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.add-comment .no-comments {
+  width: 100%;
+  text-align: justify;
+  padding: 0px;
+  margin: 0px;
 }
