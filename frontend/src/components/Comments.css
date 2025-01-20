@@ -2,7 +2,6 @@
   padding: 10px;
   background-color: #fefefe;
   min-width: 350px;
-  max-width: 70%;
   margin-bottom: 20px;
 }
 
@@ -26,6 +25,7 @@
   font-size: 14px;
   color: #555;
   margin-bottom: 5px;
+  word-break: break-word;
 }
 
 .comment-meta {
