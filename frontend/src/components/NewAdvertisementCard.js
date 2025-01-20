@@ -19,7 +19,7 @@ const EditEventCard = ({ user, pk, eventId, closeFunction }) => {
   const [advertisementSport, setAdvertisementSport] = useState("");
   const [advertisementDurationHours, setAdvertisementDurationHours] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-  const [allActivites, setAllActivities] = useState([]);
+  const [allActivities, setAllActivities] = useState([]);
   const [allAdvertisements, setAllAdvertisements] = useState([]);
   const [eventData, setEventData] = useState({
     id: eventId || -1,
@@ -226,7 +226,7 @@ const EditEventCard = ({ user, pk, eventId, closeFunction }) => {
     }
 
     // Provjera postoji li aktivnost s istim terenom i datumom
-    const isDuplicateActivity = allActivites.some((activity) => {
+    const isDuplicateActivity = allActivities.some((activity) => {
       const activityStartTime = new Date(activity.date);
       activityStartTime.setHours(activityStartTime.getHours() - 1);
       const activityEndTime = new Date(activity.date);

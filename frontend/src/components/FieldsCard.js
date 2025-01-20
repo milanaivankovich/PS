@@ -4,7 +4,7 @@ import "./FieldsCard.css";
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarAlt, faClock,faRunning, faMapMarkerAlt, faFutbol, faUser, faBasketballBall, faTableTennis, faVolleyballBall } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt, faFutbol, faBasketballBall, faTableTennis, faVolleyballBall } from "@fortawesome/free-solid-svg-icons";
 
 const FieldsCard = ({ field, userId, userType }) => {
   const [isFavourite, setIsFavourite] = useState(true);
