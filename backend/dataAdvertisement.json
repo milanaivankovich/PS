@@ -1,64 +1,9 @@
 [
     {
         "id": 1,
-        "name": "oglas112",
-        "description": "opis1opis1",
-        "date": "2025-01-30",
-        "business_subject_id": 3,
-        "field_id": 2,
-        "sport_id": 3,
-        "is_deleted": false,
-        "duration_hours": 1
-    },
-    {
-        "id": 2,
-        "name": "oglas22",
-        "description": "opis2opis2",
-        "date": "2025-01-30",
-        "business_subject_id": 3,
-        "field_id": 3,
-        "sport_id": 2,
-        "is_deleted": true,
-        "duration_hours": 2
-    },
-    {
-        "id": 3,
-        "name": "oglas3",
-        "description": "opis3opis3",
-        "date": "2025-01-30",
-        "business_subject_id": 3,
-        "field_id": 3,
-        "sport_id": 2,
-        "is_deleted": true,
-        "duration_hours": 4
-    },
-    {
-        "id": 4,
-        "name": "oglas5",
-        "description": "opis5opis5",
-        "date": "2025-01-13",
-        "business_subject_id": 3,
-        "field_id": 2,
-        "sport_id": 2,
-        "is_deleted": false,
-        "duration_hours": 1
-    },
-    {
-        "id": 5,
-        "name": "oglas33",
-        "description": "opis33opis33",
-        "date": "2025-01-30",
-        "business_subject_id": 3,
-        "field_id": 6,
-        "sport_id": 4,
-        "is_deleted": false,
-        "duration_hours": 2
-    },
-    {
-        "id": 6,
         "name": "Upis novih članova",
         "description": "Muški odbojkaški klub Borac vrši upis novih članova.",
-        "date": "2025-02-01",
+        "date": "2025-02-10",
         "business_subject_id": 7,
         "field_id": 6,
         "sport_id": 4,
