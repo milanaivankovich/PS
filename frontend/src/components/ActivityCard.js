@@ -356,39 +356,40 @@ const ActivityCard = ({ activity }) => {
   };
 
 
-  ///datetime
-  const parseDateTime = (dateString, duration_hours) => {
-    // Parse the input date string
-    const date = new Date(dateString);
-
-    // Format the date as dd/MM/yyyy
-    const formattedDate = date
-      .toLocaleDateString("en-GB")
-      .replace(/\//g, "-")
-      .replace(/-/g, "/");
-
-    // Format the time as hh:mm
-    const formattedTime = date
-      .toLocaleTimeString("en-US", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      });
-
-    const endDate = new Date(date);
-    endDate.setHours(endDate.getHours() + duration_hours);
-
-    const formattedEndTime = endDate
-      .toLocaleTimeString("en-US", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: false,
-      });
-
-    return { formattedDate, formattedTime, formattedEndTime };
-  };
-
-  const { formattedDate, formattedTime, formattedEndTime } = parseDateTime(date, duration_hours);
+    ///datetime
+    const parseDateTime = (dateString, duration_hours) => {
+      // Parse the input date string
+      const date = new Date(dateString);
+      date.setHours(date.getHours() - 1);
+  
+      // Format the date as dd/MM/yyyy
+      const formattedDate = date
+        .toLocaleDateString("en-GB")
+        .replace(/\//g, "-")
+        .replace(/-/g, "/");
+  
+      // Format the time as hh:mm
+      const formattedTime = date
+        .toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        });
+        
+        const endDate = new Date(date);
+        endDate.setHours(endDate.getHours() + duration_hours);
+  
+        const formattedEndTime = endDate
+        .toLocaleTimeString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+        });
+  
+      return { formattedDate, formattedTime, formattedEndTime};
+    };
+  
+    const { formattedDate, formattedTime,formattedEndTime} = parseDateTime(date, duration_hours);
 
   const sportIcons = {
     fudbal: faFutbol,

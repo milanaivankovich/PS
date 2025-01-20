@@ -24,8 +24,12 @@ class ActivitiesCreateView(CreateView):
 
 @api_view(['GET'])
 def getData(request):
-    activiti = Activities.objects.filter(is_deleted=False)  # Prikaz svih aktivnosti
-    serializer = ActivitiesSerializer(activiti, many=True)
+    now = datetime.now()
+    activities = Activities.objects.filter(
+        is_deleted=False,
+        date__gt=now
+    )
+    serializer = ActivitiesSerializer(activities, many=True)
     return Response(serializer.data)
 
 @api_view(['POST'])
@@ -327,22 +331,24 @@ def activities_by_field(request, field_id):
 
 @api_view(['GET'])
 def get_event_history(request, username):
-    """
-    Prikazuje istoriju aktivnosti na koje se korisnik prijavio.
-    """
-    try:
-        user = Client.objects.get(username=username)
-    except Client.DoesNotExist:
-        return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+    now = datetime.now()
 
-    # Filtriraj aktivnosti na koje se korisnik prijavio i koje su završene (npr. datum < sadašnji datum)
-    now = timezone.now()
-    past_events = Activities.objects.filter(participants=user, date__lt=now).distinct()
+    try:
+        client = Client.objects.get(username=username)
+    except Client.DoesNotExist:
+        return Response({'error': 'Client not found'}, status=404)
     
-    if past_events.exists():
-        serializer = ActivitiesSerializer(past_events, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-    return Response({'error': 'No past events found for this user'}, status=status.HTTP_404_NOT_FOUND)
+    activities = Activities.objects.filter(
+        client=client,
+        is_deleted=False,
+        date__lt=now
+    )
+    
+    if activities.exists():
+        serializer = ActivitiesSerializer(activities, many=True)
+        return Response(serializer.data)
+    else:
+        return Response({'error': 'No activities found for this client'}, status=404)
 
 @api_view(['GET'])
 def get_user_events(request, username):
