@@ -139,17 +139,22 @@ const Comments = ({ activityId }) => {
         {comments.length > 0 ? (
           comments.map((comment) => (
             <div key={comment.id} className="comment">
-              <p className="comment-text">{comment.text}</p>
-              <img src={pictures[comment.client] !== null ? pictures[comment.client] : CreatorImg} className="creator-image" alt="Creator" />
-              <p className="comment-meta">
+              
+              <div className="comment-meta">
                 <span className="comment-date">
                   {new Date(comment.date).toLocaleString()}
                 </span>{" "}
-                -{" "}
-                <span className="comment-author">
-                  @{usernames[comment.client] || "Nepoznato"}
-                </span>
-              </p>
+                <div className="comment-author-section">
+                  <img
+                    src={pictures[comment.client] !== null ? pictures[comment.client] : CreatorImg}
+                    className="comment-image"
+                    alt="Creator"
+                  />
+                  <span className="comment-author">@{usernames[comment.client] || "Nepoznato"}</span>
+                </div>
+                <p className="comment-text">{comment.text}</p>
+              </div>
+              
             </div>
           ))
         ) : (
