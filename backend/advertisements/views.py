@@ -14,7 +14,7 @@ def getData(request):
     advertisements = Advertisement.objects.filter(
         is_deleted=False,
         date__gt=now
-    )
+    ).order_by('date')  
     serializer = AdvertisementSerializer(advertisements, many=True)
     return Response(serializer.data)
 

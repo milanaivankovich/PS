@@ -28,7 +28,7 @@ def getData(request):
     activities = Activities.objects.filter(
         is_deleted=False,
         date__gt=now
-    )
+    ).order_by('date') 
     serializer = ActivitiesSerializer(activities, many=True)
     return Response(serializer.data)
 
