@@ -88,7 +88,7 @@ def get_client_activities(request, client_id):
         is_deleted=False,
         date__gte=now  # Dohvata sve aktivnosti od sadašnjeg trenutka nadalje
         
-    )
+    ).order_by('date')
     print(f"Broj aktivnosti za klijenta {client_id}: {activities.count()}")
     if activities.exists():
         serializer = ActivitiesSerializer(activities, many=True)
@@ -294,7 +294,7 @@ def activities_by_username(request, username):
     """
     Prikazuje aktivnosti koje je korisnik kreirao.
     """
-    activities = Activities.objects.filter(client__username=username, is_deleted=False)
+    activities = Activities.objects.filter(client__username=username, is_deleted=False).order_by('date')
     if activities.exists():
         serializer = ActivitiesSerializer(activities, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
@@ -321,7 +321,7 @@ def activities_by_field(request, field_id):
     """
     Filtrira aktivnosti na osnovu ID-a terena.
     """
-    activities = Activities.objects.filter(field_id=field_id, is_deleted=False, date__gt=now())
+    activities = Activities.objects.filter(field_id=field_id, is_deleted=False, date__gt=now()).order_by('date')
     if activities.exists():
         serializer = ActivitiesSerializer(activities, many=True)
         return Response(serializer.data, status=200)

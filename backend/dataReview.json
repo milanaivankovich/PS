@@ -54,5 +54,45 @@
         "client_id": 30,
         "field_id": 8,
         "date": "2025-01-22"
+    },
+    {
+        "id": 8,
+        "rating": 5,
+        "description": "Odličan za manju ekipu za basket",
+        "client_id": 12,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 9,
+        "rating": 4,
+        "description": "Lokacija je jako dobra, teren isto nije loš",
+        "client_id": 7,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 10,
+        "rating": 1,
+        "description": "Bilo je dosta smeća na terenu kad smo igrali basket prošle sedmice",
+        "client_id": 30,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 11,
+        "rating": 4,
+        "description": "Solidan teren na dobroj lokaciji",
+        "client_id": 4,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 12,
+        "rating": 4,
+        "description": "Solidan teren",
+        "client_id": 32,
+        "field_id": 1,
+        "date": "2025-01-22"
     }
 ]
