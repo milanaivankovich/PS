@@ -154,5 +154,41 @@
         "sport_id": 2,
         "is_deleted": false,
         "duration_hours": 0
+    },
+    {
+        "id": 27,
+        "client_id": 30,
+        "titel": "Košarka",
+        "description": "Da li ima zainteresovanih za košarku sutra naveče, potrebna su nam još 3 igrača.",
+        "date": "2025-01-24",
+        "field_id": 1,
+        "NumberOfParticipants": 3,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 2
+    },
+    {
+        "id": 28,
+        "client_id": 30,
+        "titel": "Fudbal",
+        "description": "Tražim zainteresovane za fudbal, večernji termin.",
+        "date": "2025-01-27",
+        "field_id": 2,
+        "NumberOfParticipants": 5,
+        "sport_id": 2,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 29,
+        "client_id": 30,
+        "titel": "Košarka",
+        "description": "Drug nam se povrijedio pa nam fali još jedan za tim, da li ima neko zainteresovan za subotu?",
+        "date": "2025-01-25",
+        "field_id": 4,
+        "NumberOfParticipants": 1,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 2
     }
 ]
