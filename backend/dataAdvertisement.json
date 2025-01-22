@@ -9,5 +9,126 @@
         "sport_id": 4,
         "is_deleted": false,
         "duration_hours": 1
+    },
+    {
+        "id": 2,
+        "name": "Trening na otvorenom",
+        "description": "Ženski košarkaški klub Borac organizuje pokazni trening na otvorenom.",
+        "date": "2025-03-12",
+        "business_subject_id": 3,
+        "field_id": 11,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 3,
+        "name": "Turnir u malom fudbalu",
+        "description": "Fudbalski klub Spartak organizuje turnir u malom fudbalu.",
+        "date": "2025-02-20",
+        "business_subject_id": 4,
+        "field_id": 2,
+        "sport_id": 2,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 4,
+        "name": "Škola fudbala na otvorenom",
+        "description": "Fudbalski klub Željezničar organizuje školu fudbala na otvorenom",
+        "date": "2025-04-20",
+        "business_subject_id": 6,
+        "field_id": 3,
+        "sport_id": 2,
+        "is_deleted": false,
+        "duration_hours": 4
+    },
+    {
+        "id": 5,
+        "name": "Škola košarke na otvorenom",
+        "description": "Muški košarkaški klub Rookie organizuje školu fudbala na otvorenom za nove članove.",
+        "date": "2025-01-30",
+        "business_subject_id": 1,
+        "field_id": 4,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 5
+    },
+    {
+        "id": 6,
+        "name": "Upis novih članova",
+        "description": "Muški košarkaški klub Borac organizuje upis novih članova.",
+        "date": "2025-01-31",
+        "business_subject_id": 3,
+        "field_id": 1,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 7,
+        "name": "Škola košarke",
+        "description": "Škola košarke na otvorenom za sve članove.",
+        "date": "2025-01-15",
+        "business_subject_id": 3,
+        "field_id": 15,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 2
+    },
+    {
+        "id": 8,
+        "name": "Škola fudbala na otvorenom",
+        "description": "Škola fudbala na otvorenom za sve članove.",
+        "date": "2025-01-08",
+        "business_subject_id": 4,
+        "field_id": 9,
+        "sport_id": 2,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 9,
+        "name": "Škola košarke",
+        "description": "Škola košarke na otvorenom za muške članove.",
+        "date": "2025-01-04",
+        "business_subject_id": 1,
+        "field_id": 7,
+        "sport_id": 2,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 10,
+        "name": "Škola tenisa",
+        "description": "Škola tenisa za muškarce.",
+        "date": "2025-01-10",
+        "business_subject_id": 5,
+        "field_id": 14,
+        "sport_id": 3,
+        "is_deleted": false,
+        "duration_hours": 3
+    },
+    {
+        "id": 11,
+        "name": "Upis novih članova",
+        "description": "Teniski klub Reket vrši upis novih članova.",
+        "date": "2025-04-20",
+        "business_subject_id": 5,
+        "field_id": 10,
+        "sport_id": 3,
+        "is_deleted": false,
+        "duration_hours": 4
+    },
+    {
+        "id": 12,
+        "name": "Humanitarni turnir",
+        "description": "Košarkaški klub Borac održava humanitarni turnir u košarci za prikupljanje novčanih sredstava.",
+        "date": "2025-02-28",
+        "business_subject_id": 3,
+        "field_id": 1,
+        "sport_id": 1,
+        "is_deleted": false,
+        "duration_hours": 3
     }
 ]

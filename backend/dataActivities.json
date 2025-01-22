@@ -80,14 +80,14 @@
         "field_id": 3,
         "NumberOfParticipants": 5,
         "sport_id": 2,
-        "is_deleted": false,
+        "is_deleted": true,
         "duration_hours": 2
     },
     {
         "id": 21,
         "client_id": 7,
-        "titel": "basket",
-        "description": "opis",
+        "titel": "Basket",
+        "description": "Rekreativno fudbal",
         "date": "2025-01-29",
         "field_id": 3,
         "NumberOfParticipants": 5,
@@ -104,7 +104,7 @@
         "field_id": 4,
         "NumberOfParticipants": 4,
         "sport_id": 1,
-        "is_deleted": false,
+        "is_deleted": true,
         "duration_hours": 2
     },
     {
@@ -142,5 +142,17 @@
         "sport_id": 1,
         "is_deleted": false,
         "duration_hours": 2
+    },
+    {
+        "id": 26,
+        "client_id": 7,
+        "titel": "Fudbal",
+        "description": "Potrebno par članova za fudbal na otvorenom.",
+        "date": "2025-01-14",
+        "field_id": 8,
+        "NumberOfParticipants": 10,
+        "sport_id": 2,
+        "is_deleted": false,
+        "duration_hours": 0
     }
 ]

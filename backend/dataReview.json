@@ -1,1 +1,34 @@
-[]
+[
+    {
+        "id": 1,
+        "rating": 5,
+        "description": "Jako dobar teren",
+        "client_id": 10,
+        "field_id": 1,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 2,
+        "rating": 3,
+        "description": "Poprilično zapušten teren",
+        "client_id": 7,
+        "field_id": 3,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 3,
+        "rating": 1,
+        "description": "Trava nije pogodna za održavanje fudbalske utakmice",
+        "client_id": 10,
+        "field_id": 3,
+        "date": "2025-01-22"
+    },
+    {
+        "id": 4,
+        "rating": 5,
+        "description": "Odličan teren",
+        "client_id": 7,
+        "field_id": 11,
+        "date": "2025-01-22"
+    }
+]
