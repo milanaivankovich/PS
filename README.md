@@ -10,7 +10,8 @@
 
 ##  Features
 
-###  Start page
+###  Home page
+
 ![startPage](https://github.com/user-attachments/assets/dc916bbd-3784-4b08-94e0-bd7b74870ecf)
 
 ###  User Registration and Login
@@ -18,6 +19,7 @@ Easily sign up or log in using email, Google, or Facebook.
 ![Screenshot 2025-05-12 100512](https://github.com/user-attachments/assets/220c2a51-f6e7-411f-9eff-7923f2c7160e)
 
 ###  View advertisements and activities
+
 ![advertisements](https://github.com/user-attachments/assets/5e107201-57f3-42bd-bc5a-4168639ad897)
 
 ![activities](https://github.com/user-attachments/assets/5dfbd637-991a-4d54-9c2a-4d0cebda5f51)
@@ -38,9 +40,8 @@ View player activities, info, and past game history.
 
 
 ###  Business Subject Profiles
-View business subject advertisementss, info, and past game history.
-![businessProfile](https://github.com/user-attachments/assets/ddaaa611-64e9-4208-b241-d83b5d317edf)
-
+View business subject advertisements, info, and past game history.
+![businessProfile](https://github.com/user-attachments/assets/6dd31757-ccf6-4a5d-b4c3-4237f30c4636)
 
 
 ###  Edit Profile  
