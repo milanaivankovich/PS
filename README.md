@@ -19,6 +19,7 @@ Easily sign up or log in using email, Google, or Facebook.
 
 ###  View advertisements and activities
 ![advertisements](https://github.com/user-attachments/assets/5e107201-57f3-42bd-bc5a-4168639ad897)
+
 ![activities](https://github.com/user-attachments/assets/5dfbd637-991a-4d54-9c2a-4d0cebda5f51)
 
 ###  Create and Join Sports Activities
