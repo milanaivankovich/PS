@@ -41,6 +41,7 @@ View player activities, info, and past game history.
 
 ###  Business Subject Profiles
 View business subject advertisements, info, and past game history.
+
 ![businessProfile](https://github.com/user-attachments/assets/6dd31757-ccf6-4a5d-b4c3-4237f30c4636)
 
 
