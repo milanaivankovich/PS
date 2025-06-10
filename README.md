@@ -1,6 +1,6 @@
 # 'Oće neko na basket
 
-**'Oće neko na basket** is a web application built with **React.js** and **Django** that helps athletes and sports enthusiasts connect and schedule activities on local sports fields. Whether you're looking for teammates or just an available field, 'Oće neko na basket makes it easy to coordinate and play.
+**🏀 'Oće neko na basket** is a web application built with **React.js** and **Django** that helps athletes and sports enthusiasts connect and schedule activities on local sports fields. Whether you're looking for teammates or just an available field, 'Oće neko na basket makes it easy to coordinate and play.
 
 ## Demo Videos
 - [Fields and activities overview](https://drive.google.com/file/d/1pX5DygsTamA8FE718DJzVHe6zekJSpBW/view?usp=drive_link)
@@ -10,9 +10,16 @@
 
 ##  Features
 
+###  Start page
+![startPage](https://github.com/user-attachments/assets/dc916bbd-3784-4b08-94e0-bd7b74870ecf)
+
 ###  User Registration and Login
 Easily sign up or log in using email, Google, or Facebook.
 ![Screenshot 2025-05-12 100512](https://github.com/user-attachments/assets/220c2a51-f6e7-411f-9eff-7923f2c7160e)
+
+###  View advertisements and activities
+![advertisements](https://github.com/user-attachments/assets/5e107201-57f3-42bd-bc5a-4168639ad897)
+![activities](https://github.com/user-attachments/assets/5dfbd637-991a-4d54-9c2a-4d0cebda5f51)
 
 ###  Create and Join Sports Activities
 Set up games and join local matches with ease.
@@ -27,6 +34,12 @@ Search nearby fields and find available games to join.
 ###  Player Profiles
 View player activities, info, and past game history.
 ![Screenshot 2025-05-12 100726](https://github.com/user-attachments/assets/05d2095d-c817-4773-966b-c99fdd60bb48)
+
+
+###  Business Subject Profiles
+View business subject advertisementss, info, and past game history.
+![businessProfile](https://github.com/user-attachments/assets/ddaaa611-64e9-4208-b241-d83b5d317edf)
+
 
 
 ###  Edit Profile  
